@@ -1,0 +1,13 @@
+{
+  "name": "eric-passwd-tools",
+
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
+
+  "postCreateCommand": "java -version && docker --version && git --version"
+}
