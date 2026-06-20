@@ -1,0 +1,7 @@
+services:
+  cracklib-audit:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: password-audit-cracklib
+    restart: unless-stopped 
